@@ -1,0 +1,72 @@
+.care-container {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--container-bg);
+  position: relative;
+}
+
+.care-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 50px;
+  height: 100%;
+  background: var(--container-bg);
+  z-index: -1;
+}
+
+.care-buttons {
+  display: flex;
+  background: var(--buttons-bg);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+.care-buttons button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  width: 450px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--button-text-color);
+  text-align: center;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.care-buttons button.active {
+  color: #ff4b7d;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  .care-buttons {
+    flex-direction: column;
+  }
+
+  .care-buttons button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .care-buttons button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+body.dark-theme {
+  --container-bg: linear-gradient(to top, #333333, #444444, #333333);
+  --buttons-bg: #333333;
+  --button-text-color: #cccccc;
+}
+
+body.dark-theme .care-buttons button.active {
+  background-color: #666666;
+}

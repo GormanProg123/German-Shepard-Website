@@ -1,0 +1,44 @@
+.gallery-container {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--container-bg);
+  position: relative;
+}
+
+.gallery-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 50px;
+  height: 100%;
+  background: var(--container-bg);
+  z-index: -1;
+}
+
+.gallery-buttons {
+  display: flex;
+  background: var(--button-background);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+.gallery-buttons button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  width: 600px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--button-text-color);
+  text-align: center;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.gallery-buttons button.active {
+  color: #ff4b7d;
+  font-weight: bold;
+  background-color: var(--button-active-bg);
+  border-radius: 5px;
+}

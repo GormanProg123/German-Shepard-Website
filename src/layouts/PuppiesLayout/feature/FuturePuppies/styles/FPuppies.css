@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap");
+
+.future-puppies-container {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--container-bg);
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.future-puppies-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 50px;
+  height: 100%;
+  background: var(--container-bg);
+  z-index: -1;
+}
+
+.future-puppies-content {
+  text-align: left;
+  padding: 40px 20px;
+  background-color: var(--content-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1800px;
+  margin: 20px 0;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.future-puppies-title {
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff4d4d, #ff8080);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  font-family: "Lobster", cursive;
+}
+
+.future-puppies-description {
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.future-puppies-button {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(45deg, #ff4d4d, #ff8080);
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.future-puppies-button:hover {
+  background: linear-gradient(45deg, #ff8080, #ff4d4d);
+}
+
+@media (max-width: 900px) {
+  .future-puppies-content {
+    padding: 30px 15px;
+  }
+}

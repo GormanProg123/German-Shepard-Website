@@ -1,0 +1,349 @@
+:root {
+  --text-color: #131337;
+  --text-description-color: rgb(19 19 55 / 64%);
+  --text-or-color: rgba(14, 14, 43, 0.32);
+  --background-color: #ffffff;
+  --container-bg: linear-gradient(to top, #ffcccc, #f9f9f9, #ffcccc);
+  --header-bg: #ffffff;
+  --footer-bg: white;
+  --footer-text: black;
+  --footer-title-color: #e91e63;
+  --footer-nav-text: black;
+  --footer-highlight-color: #ff4d4d;
+  --header-footer-text: #000000;
+  --input-background: #f6f6f6;
+  --input-border: rgb(19 19 55 / 12%);
+  --input-border-focus: #ff4d4d;
+  --button-color: #fff;
+  --button-bg: #ff4d4d;
+  --link-color: #ff4d4d;
+  --divider-color: rgb(19 19 55 / 12%);
+  --ach-color: black;
+}
+
+body.dark-theme {
+  --text-color: #ffffff;
+  --text-description-color: rgb(255 255 255 / 64%);
+  --text-or-color: rgb(255 255 255 / 48%);
+  --background-color: #171717;
+  --container-bg: linear-gradient(to top, #330000, #1a1a1a, #330000);
+  --header-bg: #171717;
+  --footer-bg: #1a1a1a;
+  --footer-text: white;
+  --subtitle-text: black;
+  --footer-title-color: #e91e63;
+  --footer-nav-text: white;
+  --footer-highlight-color: #ffffff;
+  --achievement-tag: linear-gradient(to top, #330000, #1a1a1a, #330000);
+  --header-footer-text: #ffffff;
+  --input-background: rgb(255 255 255 / 8%);
+  --input-border: rgb(255 255 255 / 12%);
+  --input-border-focus: #ffffff80;
+  --button-color: #000;
+  --button-bg: #ff6666;
+  --link-color: #ffffff;
+  --divider-color: rgb(255 255 255 / 12%);
+  --fill-theme-toggle: invert(1);
+  --fill-toggle-button: invert(1) opacity(0.48);
+  --maps-title-color: #ffffff;
+  --ach-color: white;
+}
+
+header {
+  background: var(--header-bg);
+  color: var(--header-footer-text);
+}
+
+footer {
+  background: var(--footer-bg);
+  color: var(--header-footer-text);
+}
+
+footer .highlight {
+  color: var(--footer-highlight-color);
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: scale(1.1);
+}
+
+body.dark-theme .info-title,
+body.dark-theme .form-title {
+  color: var(--text-color);
+}
+
+body.dark-theme .info-subtitle,
+body.dark-theme .form-subtitle {
+  color: var(--text-description-color);
+}
+
+body.dark-theme .social-title {
+  color: var(--text-color);
+}
+
+body.dark-theme .contact-form label {
+  color: var(--text-color);
+}
+
+body.dark-theme .contact-text,
+body.dark-theme .contact-icon {
+  color: var(--text-color);
+}
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+  background-color: var(--input-background);
+  color: var(--text-color);
+}
+
+body.dark-theme .contact-form input:focus,
+body.dark-theme .contact-form textarea:focus {
+  border-color: var(--input-border-focus);
+}
+
+body.dark-theme .social-button {
+  background-color: var(--input-background);
+}
+
+body.dark-theme .social-button:hover {
+  background-color: var(--input-border-focus);
+}
+
+body.dark-theme .social-icon {
+  color: var(--text-color);
+}
+
+body.dark-theme .contact-form button {
+  background-color: var(--button-bg);
+  color: var(--button-color);
+}
+
+body.dark-theme .contact-form button:hover {
+  background-color: var(--button-bg);
+}
+
+body.dark-theme .achievements-container {
+  background: linear-gradient(to bottom, #330000, #1a1a1a, #330000);
+}
+
+body.dark-theme .achievements-container::before {
+  background: linear-gradient(to top, #330000, #1a1a1a, #330000);
+}
+
+body.dark-theme .achievements-label {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+}
+
+body.dark-theme .achievements-title {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark-theme .achievements-subtitle {
+  color: rgb(255 255 255 / 80%);
+}
+
+body.dark-theme .achievement-item {
+  background: #222;
+  color: white;
+}
+
+body.dark-theme .achievement-title {
+  color: #ffffff !important;
+}
+
+body.dark-theme .achievement-description {
+  color: rgb(255 255 255 / 70%);
+}
+
+body.dark-theme .achievement-icon {
+  color: #ff9999;
+}
+
+body.dark-theme .breed-description-container {
+  background: linear-gradient(to bottom, #330000, #1a1a1a, #330000);
+}
+
+body.dark-theme .breed-description-container::before {
+  background: linear-gradient(to bottom, #330000, #1a1a1a, #330000);
+}
+
+body.dark-theme .breed-tag {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+}
+
+body.dark-theme .breed-description-content h2 {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark-theme .breed-description-content p {
+  color: rgb(255 255 255 / 80%);
+}
+
+body.dark-theme .breed-description-button {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+}
+
+body.dark-theme .breed-description-button:hover {
+  background: linear-gradient(45deg, #ff9999, #ff6666);
+}
+
+body.dark-theme .news-container {
+  background: linear-gradient(to top, #330000, #1a1a1a, #330000);
+}
+
+body.dark-theme .news-container::before {
+  background: linear-gradient(to top, #330000, #1a1a1a, #330000);
+}
+
+body.dark-theme .latest-events {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+}
+
+body.dark-theme .news-title {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark-theme .news-subtitle {
+  color: rgb(255 255 255 / 80%);
+}
+
+body.dark-theme .all-news-button {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+}
+
+body.dark-theme .all-news-button:hover {
+  background: linear-gradient(45deg, #ff9999, #ff6666);
+}
+
+body.dark-theme .question-field-container {
+  background: linear-gradient(to bottom, #330000, #1a1a1a, #330000);
+}
+
+body.dark-theme .question-field-container::before {
+  background: linear-gradient(to bottom, #330000, #1a1a1a, #330000);
+}
+
+body.dark-theme .question-field-title {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark-theme .question-field-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-theme .primary-button {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+}
+
+body.dark-theme .primary-button:hover {
+  background: linear-gradient(45deg, #ff9999, #ff6666);
+}
+
+body.dark-theme .secondary-button {
+  border: 2px solid #ff9999;
+  color: #ff9999;
+}
+
+body.dark-theme .secondary-button:hover {
+  background-color: #ff9999;
+  color: white;
+}
+
+body.dark-theme .question-field-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+body.dark-theme .question-field-map {
+  filter: brightness(0.8);
+}
+
+body.dark-theme .home-button {
+  background: linear-gradient(45deg, #aa0000, #cc4444);
+  color: white;
+}
+
+body.dark-theme .home-button:hover {
+  background: linear-gradient(45deg, #cc4444, #aa0000);
+}
+
+body.dark-theme .home-content p {
+  color: #e0e0e0;
+}
+
+body.dark-theme .home-content h2 {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark-theme .home-container {
+  background: linear-gradient(to bottom, #1a1a1a, #330000);
+}
+
+body.dark-theme .home-container::before {
+  background: linear-gradient(to bottom, #1a1a1a, #330000);
+}
+
+body.dark-theme .сontent-container {
+  background: var(--container-bg);
+}
+
+body.dark-theme .news-item {
+  background: #2b2b2b;
+  color: var(--text-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .news-item-title {
+  color: var(--text-color);
+}
+
+body.dark-theme .news-item-desc {
+  color: var(--text-description-color);
+}
+
+body.dark-theme .read-more {
+  color: var(--footer-highlight-color);
+}
+
+body.dark-theme .read-more:hover {
+  text-decoration: underline;
+}
+
+body.dark-theme {
+  --container-bg: linear-gradient(to top, #330000, #1a1a1a, #330000);
+  --content-bg: #171717;
+  --text-color: #ffffff;
+}
+
+body.dark-theme footer {
+  border: none;
+}
+
+body.dark-theme .footer-divider {
+  background-color: transparent;
+}

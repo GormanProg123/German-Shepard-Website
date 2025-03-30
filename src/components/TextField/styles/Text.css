@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap");
+
+.new-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--container-bg);
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.new-content {
+  text-align: left;
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+.new-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Lobster", cursive;
+  background-image: linear-gradient(45deg, #ff4d4d, #ff8080);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.new-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: var(--text-description-color);
+}
+
+body.dark-theme .new-container {
+  background: var(--container-bg);
+}
+
+body.dark-theme .new-title {
+  background-image: linear-gradient(45deg, #ff6666, #ff9999);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.dark-theme .new-subtitle {
+  color: var(--text-description-color);
+}
