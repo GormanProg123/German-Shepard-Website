@@ -23,6 +23,7 @@ export const Header = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Главная
               </NavLink>
@@ -31,6 +32,7 @@ export const Header = () => {
               <NavLink
                 to="/news"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Новости
               </NavLink>
@@ -39,6 +41,7 @@ export const Header = () => {
               <NavLink
                 to="/achievements"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Достижения
               </NavLink>
@@ -47,6 +50,7 @@ export const Header = () => {
               <NavLink
                 to="/males"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Кобели
               </NavLink>
@@ -55,6 +59,7 @@ export const Header = () => {
               <NavLink
                 to="/females"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Суки
               </NavLink>
@@ -63,6 +68,7 @@ export const Header = () => {
               <NavLink
                 to="/puppies"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Щенки
               </NavLink>
@@ -71,6 +77,7 @@ export const Header = () => {
               <NavLink
                 to="/tips"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Советы владельцам
               </NavLink>
@@ -79,6 +86,7 @@ export const Header = () => {
               <NavLink
                 to="/gallery"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Галерея
               </NavLink>
@@ -87,6 +95,7 @@ export const Header = () => {
               <NavLink
                 to="/contacts"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={() => setMenuOpen(false)}
               >
                 Контакты
               </NavLink>
